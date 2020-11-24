@@ -53,7 +53,7 @@
 
         <?php echo get_partial('search/aggregation', array(
           'id' => '#facet-maintainingrepository',
-          'label' => __('Maintained by'),
+          'label' => "Entail/Vínculo",
           'name' => 'repository',
           'aggs' => $aggs,
           'filters' => $search->filters)) ?>
@@ -136,7 +136,7 @@
 
       <?php foreach ($pager->getResults() as $hit): ?>
         <?php $doc = $hit->getData() ?>
-        <?php echo include_partial('actor/searchResult', array('doc' => $doc, 'pager' => $pager, 'culture' => $selectedCulture)) ?>
+        <?php echo include_partial('actor/searchResult', array('doc' => $doc, 'pager' => $pager, 'culture' => $selectedCulture, 'aggs' => $aggs)) ?>
       <?php endforeach; ?>
 
     </div>

@@ -39,7 +39,7 @@
                   <option value="archivalHistory"<?php echo $item['field'] == 'archivalHistory' ? ' selected="selected"' : '' ?>><?php echo __('Archival history') ?></option>
                 <?php endif; ?>
                 <option value="scopeAndContent"<?php echo $item['field'] == 'scopeAndContent' ? ' selected="selected"' : '' ?>><?php echo __('Scope and content') ?></option>
-                <option value="extentAndMedium"<?php echo $item['field'] == 'extentAndMedium' ? ' selected="selected"' : '' ?>><?php echo __('Extent and medium') ?></option>
+                <option value="extentAndMedium"<?php echo $item['field'] == 'extentAndMedium' ? ' selected="selected"' : '' ?>><?php echo 'Archival reference'; ?></option>
                 <option value="subject"<?php echo $item['field'] == 'subject' ? ' selected="selected"' : '' ?>><?php echo __('Subject access points') ?></option>
                 <option value="name"<?php echo $item['field'] == 'name' ? ' selected="selected"' : '' ?>><?php echo __('Name access points') ?></option>
                 <option value="place"<?php echo $item['field'] == 'place' ? ' selected="selected"' : '' ?>><?php echo __('Place access points') ?></option>
@@ -83,7 +83,7 @@
               <option value="archivalHistory"><?php echo __('Archival history') ?></option>
             <?php endif; ?>
             <option value="scopeAndContent"><?php echo __('Scope and content') ?></option>
-            <option value="extentAndMedium"><?php echo __('Extent and medium') ?></option>
+            <option value="extentAndMedium"><?php echo 'Archival reference'; ?></option>
             <option value="subject"><?php echo __('Subject access points') ?></option>
             <option value="name"><?php echo __('Name access points') ?></option>
             <option value="place"><?php echo __('Place access points') ?></option>
@@ -123,7 +123,7 @@
           <div class="filter-row">
             <div class="filter">
               <?php echo $form->repos
-                ->label(__('Repository'))
+                ->label("Entail/Vínculo")
                 ->renderRow() ?>
             </div>
           </div>
