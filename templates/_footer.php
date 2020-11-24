@@ -10,7 +10,7 @@
     <?php echo __('Printed: %d%', array('%d%' => date('Y-m-d'))) ?>
   </div>
 
-<!--
+<!---
   <style>
     .modal{
       position: fixed;
@@ -37,10 +37,17 @@
       padding: 10px;
     }
   </style>
--->
+--->
 
-    <section class="container">
+ <section class="container">
 
+ <div id="note">
+      <div class="span12">
+      		<p>&#9656; On the data base rationale and practical information, see the pages <a href="https://www.vinculum-database.fcsh.unl.pt/index.php/about" target="_self">About</a> and <a href="https://www.vinculum-database.fcsh.unl.pt/index.php/information" target="_self">Information</a>.
+        </p>
+       </div>
+  </div>
+  
     <div class="span3">
         <ul>
             <span class="title"><h1>ADDRESS</h1></span>
@@ -76,8 +83,8 @@
     
     </section>
 
-</footer>
-
+  </footer>
+  
 <!-- Illumini -->
 <?php $gaKey = sfConfig::get('app_google_analytics_api_key', '') ?>
 <?php if (!empty($gaKey)): ?>

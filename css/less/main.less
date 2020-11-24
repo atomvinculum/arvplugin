@@ -48,12 +48,23 @@ h6 {
   h6 {
     font-family: @sansFontFamily;
   }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+line-height: 25px;
+}
+
 }
 
 h1 { font-size: 20px; }
 h2 { font-size: 18px; }
 h3 { font-size: 17px; }
 h4 { font-size: 16px; }
+
+
 
 #content h2 {
   font-size: 14px;
@@ -94,7 +105,6 @@ h1, h2, h3, h4, h5, h6,
 #context-menu #opening-times,
 #context-menu #physical-objects,
 .list-menu .more a {
-  // color: @grayDark;
 }
 
 .list-menu ul {
@@ -149,7 +159,6 @@ h1, h2, h3, h4, h5, h6,
 #action-icons i,
 #sort-header .sort-options label,
 #sort-header .dropdown-selected span {
-//  text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
 }
 
 .sidebar-widget > div,
@@ -165,7 +174,6 @@ h1, h2, h3, h4, h5, h6,
 h1,
 #context-menu h4,
 #facets .content h3 {
-//  text-shadow: 1px 1px 1px rgba(0, 0, 0, .75);
 }
 
 h1 .count {
@@ -178,7 +186,6 @@ h1 .count {
   border: 0;
   .box-shadow(none);
   color: @grayDark;
-  // text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
   a {
     color: @grayLight;
   }
@@ -331,4 +338,49 @@ body.login #content {
 .x-btn {
   color: @grayLighter;
   border: 2px solid @grayLighter;
+}
+
+
+// Footer
+#footer {
+
+  .span9 {
+  margin-right: 0px;
+  }
+
+div {
+	padding-bottom: 2px; 	
+	padding-top: 0px;
+    margin-left: -15px;
+    margin-right: 35px;
+  } 
+
+  h1 {
+    font-size: 16px;
+	margin-top: 0px;
+  	margin-bottom: 0px;
+      }
+
+  p {
+    font-size: 12.7px;
+	margin-top: 0px;
+    }
+
+}
+
+#note {
+
+.span12 {
+	margin-left: 20px;
+  }
+
+div {
+	padding-bottom: 15px; 	
+	padding-top: 10px;
+	} 
+
+	p { 
+	   	font-size: 16px;
+    	text-align: right;
+		}
 }
