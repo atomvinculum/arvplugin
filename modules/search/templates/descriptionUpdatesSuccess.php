@@ -5,7 +5,7 @@
 <?php slot('title') ?>
 
   <div class="multiline-header">
-    <?php echo image_tag('/images/icons-large/icon-new.png', array('width' => '42', 'height' => '42', 'alt' => '')) ?>
+    <?php echo image_tag('/plugins/arVPlugin/images/icons-large/icon-new.png', array('width' => '42', 'height' => '42', 'alt' => '')) ?>
     <h1 aria-describedby="results-label">
       <?php if (isset($pager) && $pager->getNbResults()): ?>
         <?php echo __('Showing %1% results', array('%1%' => $pager->getNbResults())) ?>
