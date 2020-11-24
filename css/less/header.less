@@ -25,7 +25,7 @@
  */
 
 #header {
-  height: 100px;
+  height: 120px;
   background: rgb(0,0,0);
   background: -moz-linear-gradient(180deg, #cfd9df 0%, rgba(0,0,0,0) 70%);
   background: -webkit-linear-gradient(180deg, #cfd9df 0%, rgba(0,0,0,0) 70%);
@@ -175,22 +175,22 @@
   margin-top: 3px;
 
   &.open > button {
-    background-color: @grayLight;
+    background-color: @yellow;
 
     &:before {
-      color: @yellow;
+      color: @white;
     }
   }
 
   > button {
     &:before {
-      color: #555555;
+      color: @grayLight;
     }
 
     &:focus, &:hover {
-      background-color: transparent;
+      background-color: @yellow;
       &:before {
-        color: @yellow;
+        color: @white;   
       }
     }
   }
