@@ -7,9 +7,9 @@
     <div class="input-append">
 
       <?php if (isset($repository)): ?>
-        <input type="text" name="query"<?php if (isset($sf_request->query)) echo ' class="focused"' ?> value="<?php echo esc_entities($sf_request->query) ?>" placeholder="<?php echo __('Search %1%', array('%1%' => strip_markdown($repository))) ?>"/>
+        <input type="text" name="query"<?php if (isset($sf_request->query)) echo ' class="focused"' ?> value="<?php echo $sf_request->query ?>" placeholder="<?php echo __('Search %1%', array('%1%' => strip_markdown($repository))) ?>"/>
       <?php else: ?>
-        <input type="text" name="query"<?php if (isset($sf_request->query)) echo ' class="focused"' ?> value="<?php echo esc_entities($sf_request->query) ?>" placeholder="<?php echo __('Search') ?>"/>
+        <input type="text" name="query"<?php if (isset($sf_request->query)) echo ' class="focused"' ?> value="<?php echo $sf_request->query ?>" placeholder="<?php echo __('Search') ?>"/>
       <?php endif; ?>
 
       <div class="btn-group">
@@ -20,13 +20,13 @@
         <?php if (!cache($cacheKey)): ?>
           <ul class="dropdown-menu pull-right">
             <?php $icons = array(
-              'browseInformationObjects' => '/images/icons-large/icon-archival.png',
-              'browseActors' => '/images/icons-large/icon-people.png',
-              'browseRepositories' => '/images/icons-large/icon-institutions.png',
-              'browseSubjects' => '/images/icons-large/icon-subjects.png',
-              'browseFunctions' => '/images/icons-large/icon-functions.png',
-              'browsePlaces' => '/images/icons-large/icon-places.png',
-              'browseDigitalObjects' => '/images/icons-large/icon-media.png') ?>
+              'browseInformationObjects' => '/plugins/arVPlugin/images/icons-large/icon-archival.png',
+              'browseActors' => '/plugins/arVPlugin/images/icons-large/icon-people.png',
+              'browseRepositories' => '/plugins/arVPlugin/images/icons-large/icon-institutions.png',
+              'browseSubjects' => '/plugins/arVPlugin/images/icons-large/icon-subjects.png',
+              'browseFunctions' => '/plugins/arVPlugin/images/icons-large/icon-functions.png',
+              'browsePlaces' => '/plugins/arVPlugin/images/icons-large/icon-places.png',
+              'browseDigitalObjects' => '/plugins/arVPlugin/images/icons-large/icon-media.png') ?>
             <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
             <?php if ($browseMenu->hasChildren()): ?>
               <?php foreach ($browseMenu->getChildren() as $item): ?>

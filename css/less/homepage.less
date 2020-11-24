@@ -17,12 +17,12 @@
 
 #homepage-hero {
 
-  background: url(../../images/homepage-bg.jpg) no-repeat @black;
+  background: url(../../images/homepage-bg.png);
   .background-size(cover);
   height: 420px;
   padding-top: 40px;
   padding-bottom: 40px;
-  text-shadow: 2px 0 2px rgba(25, 25, 25, .7);
+  text-shadow: 0px 0 0px rgba(25, 25, 25, .0);
   margin: 0 auto;
 
   h1,
@@ -30,7 +30,7 @@
   p,
   li,
   a {
-    color: @white;
+    color: @black;
     line-height: 120%;
   }
 
@@ -54,10 +54,15 @@
 
 #homepage-nav {
 
-  font-family: @serifFontFamily;
+//  font-family: @serifFontFamily;
+	font-family: @sansFontFamily;
 
   p {
-    font-size: 25px;
+    font-size: 19px;
+    font-style: oblique;
+  	margin-left: 54px;
+  	margin-bottom: 15px;
+    
   }
 
   ul {
@@ -70,13 +75,15 @@
     .clearfix();
 
     a {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     img {
       margin-right: 10px;
       display: inline;
       vertical-align: middle;
+      width:38px;
+      height:38px;
     }
 
   }
@@ -109,74 +116,35 @@
 
 }
 
-// Virtual exhibits
+// Footer
 
-#virtual-exhibit {
+#footer {
 
-  position: relative;
-
-  div {
-    background-image: url(http://scaa.usask.ca/gallery/northern/dommasch/images/600px/hans60_017.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 80%;
-    background-size: cover;
-    width: 100%;
-    display: block;
-    height: 280px;
+position: relative;
+  .span8 {
+  width: 895px;
+  margin-right: 0px;
   }
 
-  h3 {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    padding: 8px;
-    background-color: #000;
-    background-color: rgba(0, 0, 0, .4);
-  }
+div {
+	padding-bottom: 15px;
+ 	padding-top: 20px;  
+    margin-left: -15px;
+    margin-right: 35px;
+  } 
 
-  .small {
-    display: block;
-    font-size: 14px;
-    line-height: 16px;
-    color: lighten(@grayLight, 10%);
-  }
+  h1 {
+      font-size: 16px;
+      }
 
-  a h3 {
-    min-height: 84px;
-  }
-
-  a h3,
-  a div {
-    .transition(all 0.2s ease-in-out);
-  }
-
-  a:hover h3 {
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
-  }
-
-  a:hover div {
-    background-position: left 90%;
-  }
-
-  a:hover div:after {
-    content: "›"; // "»";
-    position: absolute;
-    font-size: 128px;
-    bottom: 50px;
-    right: 50px;
-    padding: 18px 20px 40px 22px;
-    .border-radius(60px);
-    @white: rgba(255, 255, 255, .4);
-    border: 12px solid @white;
-    color: @white;
-  }
+  p {
+      font-size: 12.7px;
+    }
 
 }
 
-// Popular this week
+
+/* Popular this week
 
 #popular-this-week {
 
@@ -222,8 +190,9 @@
   }
 
 }
+*/
 
-// Responsive deisgn
+// Responsive design
 
 @media (max-width: 767px) {
 

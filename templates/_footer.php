@@ -1,6 +1,6 @@
-<footer>
-
-  <?php if (QubitAcl::check('userInterface', 'translate')): ?>
+<footer id="footer">
+<!-- Illumini -->	
+<?php if (QubitAcl::check('userInterface', 'translate')): ?>
     <?php echo get_component('sfTranslatePlugin', 'translate') ?>
   <?php endif; ?>
 
@@ -10,6 +10,7 @@
     <?php echo __('Printed: %d%', array('%d%' => date('Y-m-d'))) ?>
   </div>
 
+<!--
   <style>
     .modal{
       position: fixed;
@@ -36,9 +37,48 @@
       padding: 10px;
     }
   </style>
+-->
+
+    <section class="container">
+
+   	<div class="span3">
+    	<ul>
+    		<span class="title"><h1>ADDRESS</h1></span>
+					 <p>Faculdade de Ciências Sociais e Humanas
+						da Universidade Nova de Lisboa<br>
+						Colégio Almada Negreiros,<br>
+						Campus de Campolide<br>
+						1099-085 Lisboa<br>
+						Portugal</p>
+        			 <p>Email: <a href="mailto:vinculum@fcsh.unl.pt">vinculum@fcsh.unl.pt</a><br>
+    					Phone: +351 918 832 042<br>
+    					<a href="https://www.vinculum.fcsh.unl.pt">www.vinculum.fcsh.unl.pt</a>
+                    </p>
+  		 </ul>
+	 </div>
+
+	<div class="span8">
+		<ul>
+    		<span class="title"><h1>ACKNOWLEDGMENTS</h1></span>
+    			  <p>VINCULUM - Entailing Perpetuity: Family, Power, Identity. 
+           			 The Social Agency of a Corporate Body (Southern Europe, 14th-17th Centuries) 
+          			 project has received funding from the European Research Council (ERC) 
+            		 under the European Union’s Horizon 2020 research and innovation programme 
+            		 (<a href="https://cordis.europa.eu/project/id/819734">grant agreement No. 819734</a>)
+        		 </p>
+    		<p>
+        	<a href="https://erc.europa.eu"><img src="/plugins/arVPlugin/images/LOGO_ERC-FLAG_EU-Positivo.png" width="250" alt="177"></a>
+        	<a href="https://www.fcsh.unl.pt"><img src="/plugins/arVPlugin/images/LOGO_NOVA-FCSH.png" width="263" alt="177"></a>
+        	<a href="https://iem.fcsh.unl.pt"><img src="/plugins/arVPlugin/images/LOGO_IEM.png" width="126" alt="177"></a>
+    		</p>
+		</ul>
+	</div>
+    
+	</section>
 
 </footer>
 
+<!-- Illumini -->
 <?php $gaKey = sfConfig::get('app_google_analytics_api_key', '') ?>
 <?php if (!empty($gaKey)): ?>
   <script>
@@ -50,26 +90,6 @@
   <script async src='https://www.google-analytics.com/analytics.js'></script>
 <?php endif; ?>
 
-<?php if ($sf_user->isAdministrator()) { ?> 
- <a href="#" id="clear_cache">Clear cache</a>
-
-<script>
- jQuery(function(){
-  jQuery("#clear_cache").on("click", function (e) {
-    e.preventDefault();
-    jQuery(this).text("Clearing cache...");
-    jQuery.ajax({
-      url:"/plugins/arVinculumPlugin/modules/cc.php"
-    }).done(function (data) {
-      jQuery("#clear_cache").text("Clearing cache... done!");
-    }).fail(function (error) {
-      console.log(error);
-    })
-   });
- })
-</script>
-
-<?php } ?>
 
 <script>
   var defaultValues = {
