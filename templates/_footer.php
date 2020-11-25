@@ -43,7 +43,7 @@
 
  <div id="note">
       <div class="span12">
-      		<p>&#9656; On the database rationale and practical information see pages <a href="https://www.vinculum-database.fcsh.unl.pt/index.php/about" target="_self">About</a> and <a href="https://www.vinculum-database.fcsh.unl.pt/index.php/information" target="_self">Information</a>.
+      		<p>&#9656; On the database rationale and practical information see pages <a href="/index.php/about" target="_self">About</a> and <a href="/index.php/information" target="_self">Information</a>.
         </p>
        </div>
   </div>

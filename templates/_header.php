@@ -43,7 +43,7 @@
       <div class="row">
 
         <div id="logo-and-name" class="span6">
-          <h1><?php echo link_to(image_tag('/plugins/arVPlugin/images/logo.png', array('alt' => __('ERC VINCULUM project database'))), 'https://www.vinculum-database.fcsh.unl.pt/index.php', array('rel' => 'home')) ?></h1>
+          <h1><?php echo link_to(image_tag('/plugins/arVPlugin/images/logo.png', array('alt' => __('ERC VINCULUM project database'))), '/', array('rel' => 'home')) ?></h1>
           </div>
 
         <div id="header-search" class="span6">
