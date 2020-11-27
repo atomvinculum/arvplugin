@@ -10,7 +10,6 @@
     <?php echo __('Printed: %d%', array('%d%' => date('Y-m-d'))) ?>
   </div>
 
-<!---
   <style>
     .modal{
       position: fixed;
@@ -29,15 +28,16 @@
     .modal-close{
       display: none;
     }
-
+<!--
     #clear_cache{
       display: block;
       width: 100%;
       text-align: center;
       padding: 10px;
     }
+-->
   </style>
---->
+
 
  <section class="container">
 
